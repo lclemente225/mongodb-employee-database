@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Employee Database System</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="design.css">
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <script src="dataTables.bootstrap4.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>Operations</th>
+            </tr>
+        </tfoot>
+        <tbody>           
+                    <tr>
+                        <td>name</td>
+                        <td>designation</td>
+                        <td>222300</td>
+                        <td>
+                            <a class="btn btn-primary" href="/edit/1">Edit</a>
+                            <form style="display: inline;" action="/delete1?_method=DELETE" method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button style="cursor: pointer;" type="submit" class="btn btn-danger ml-2">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+             
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
